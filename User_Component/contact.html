@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            box-sizing: inherit;
+        }
+
+        .html{
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .contact{
+            width: 100%;
+            height: 100%;
+            font-size: 22px;
+        }
+
+        .contact__navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            background-color: black;
+        }
+
+        .logo_ct{
+            font-size: 25px;
+            font-weight: 560;
+            color: white;
+            margin-left: 65px;
+        }
+
+        .navbar__option{
+            list-style: none;
+        }
+
+        .navbar__item{
+            display: inline-block;
+        }
+
+        .navbar__item-link{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            margin: 0 12px;
+        }
+
+        .navbar__item-link--actived{
+            color: #DE7555;
+        }
+
+        .navbar__item-link:hover{
+            color: #DE7555;
+        }
+
+        .btn-lg{
+            display: block;
+            text-align: center;
+            line-height: 40px;
+            width: 100px;
+            height: 40px;
+            background-color: #FE7C4B;
+            font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 2px 2px rgb(134, 126, 126);
+        }
+
+        .btn-lg:hover{
+            color: black;
+            opacity: 0.8;
+        }
+
+        .contact__footer{
+            width: 100%;
+            background-image: url(./img-pr/vegetables-set-left-black-slate.jpg);
+            height: 250px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            /* position: absolute; */
+            bottom: 0;
+            font-size: 19px;
+        }
+
+        .logo{
+            color: #DE7555;
+            font-size: 25px;
+        }
+
+        .logo_ct_footer{
+            font-size: 25px;
+            font-weight: 560;
+            margin-bottom: 40px;
+        }
+
+        .contact__list{
+            list-style: none;
+            padding-left: 0;
+            font-weight: 500;
+        }
+
+        .footer__contact{
+            margin-left: 90px;
+            margin-top: 50px;
+        }
+
+        .footer__apply{
+            position: absolute;
+            left: 560px;
+            margin-top: 50px;
+        }
+
+        .footer__apply-link{
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 42px;
+        }
+
+        .footer__apply-link li{
+            display: inline-block;
+        }
+
+        .footer__link{
+            text-decoration: none;
+            margin: 0 14px;
+        }
+
+        .footer__link:hover{
+            opacity: 0.8;
+        }
+
+        .footer__icon{
+            color: white;
+        }
+
+        .input__email__menu{
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .Email__input{
+            display: block;
+            border-radius: 4px;
+            outline: none;
+            width: 330px;
+            border: none;
+        }
+
+        .contact__body{
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .paragraph__contact_line2{
+            margin-bottom: 40px;
+        }
+
+        .input__row_1{
+            display: flex;
+            width: 70%;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+
+        .input__row_2{
+            width: 100%;
+            margin-bottom: 70px;
+        }
+
+        .input__email, .input__name{
+            width: 35%;
+            height: 35px;
+            margin: 0 5px;
+            outline: none;
+        }
+
+        .input__message{
+            width: 50.3%;
+            color:black;
+            border: 1px solid #a9a9a9;
+            outline: none;
+            word-wrap: break-word;
+        }
+
+        p{
+            line-height: 8px;
+        }
+
+        .input__email{
+            margin-bottom: 0;
+        }
+
+        .btn__submit{
+            width: 100px;
+            height: 40px;
+            color: white;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 40px;
+            margin: auto;
+            margin-top: 14px;
+            margin-bottom: 30px;
+            background-color: black;
+            font-weight: 550;
+        }
+
+        .btn__submit:hover{
+            color: black;
+            background-color: #a9a9a9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <div class="contact__navbar">
+            <div class="logo_ct">
+                <span class="logo">E</span>FOOD
+            </div>
+            <div class="contact__option">
+                <ul class="navbar__option">
+                    <li class="navbar__item">
+                        <a href="home.html" class="navbar__item-link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="footer.html" class="navbar__item-link">Menu</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">Service</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__item-link navbar__item-link--actived">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link btn-lg">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact__body">
+            <h3 class="heading__contact">CONTACT US</h3>
+            <p class="paragraph__contact_line1">Have question about store, orders or your account</p>
+            <p class="paragraph__contact_line2">Send our Customer Service team a note below. We look forward to helping you</p>
+            <div class="input__row_1">
+                <input type="text" placeholder="Your name" class="input__name">
+                <input type="email" placeholder="Your Email" class="input__email">
+            </div>
+            <div class="input_row_2">
+                <textarea id="w3review" placeholder="Your message" class="input__message" name="w3review" rows="6" cols="50">
+                </textarea>
+            </div>
+            <div class="btn__submit">
+                Send
+            </div>
+        </div>
+
+        <div class="contact__footer">
+            <div class="footer__contact">
+                <div class="logo_ct_footer">
+                    <span class="logo">E</span>FOOD
+                </div>
+                <h3>CONTACT INFOR</h3>
+                <ul class="contact__list">
+                    <li>Mail: haha@gmail.com</li>
+                    <li>Hotline: 09352341234</li>
+                    <li>Address: KTX 135B Trần Hưng Đạo</li>
+                </ul>
+            </div>
+    
+            <div class="footer__apply">
+                <ul class="footer__apply-link">
+                    <li>
+                        <a href="https://www.facebook.com/" class="footer__link">
+                            <i class="footer__icon fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" class="footer__link">
+                            <i class="footer__icon fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" class="footer__link">
+                            <i class="footer__icon fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <h3>JOB APPLICATION</h3>
+                <span class="input__email__footer">Enter your email:</span>
+                <input type="text" class="Email__input">
+            </div>
+            <div class="dura"></div>
+        </div>
+    </div>
+</body>
+</html>
