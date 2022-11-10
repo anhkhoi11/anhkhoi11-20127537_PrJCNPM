@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            box-sizing: inherit;
+        }
+         .html, body{
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .home__contain{
+            width: 100%;
+            font-size: 22px;
+        }
+
+        .home__navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            background-color: black;
+        }
+
+        .logo_ct{
+            font-size: 25px;
+            font-weight: 560;
+            color: white;
+            margin-left: 65px;
+        }
+
+        .logo{
+            color: #DE7555;
+        }
+
+        .navbar__option{
+            list-style: none;
+        }
+
+        .navbar__item{
+            display: inline-block;
+        }
+
+        .navbar__item-link{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            margin: 0 12px;
+        }
+
+        .navbar__item-link--actived{
+            color: #DE7555;
+        }
+
+        .navbar__item-link:hover{
+            color: #DE7555;
+        }
+
+        .btn-lg{
+            display: block;
+            text-align: center;
+            line-height: 40px;
+            width: 100px;
+            height: 40px;
+            background-color: #FE7C4B;
+            font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 2px 2px rgb(134, 126, 126);
+        }
+
+        .btn-lg:hover{
+            color: black;
+            opacity: 0.8;
+        }
+
+        .home__body{
+            display: flex;
+        }
+
+        .img__pr{
+            height: 100%;
+        }
+
+        .img__part{
+            width: 1450px;
+            height: 610px;
+        }
+
+        .contain__icon-link{
+            font-size: 30px;
+            margin-left: 24px;
+            line-height: 610px;
+            color: black;
+        }
+
+        .home__footer{
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            background-color: black;
+        }
+
+        .home__body:hover{
+            animation: movation ease-in 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes movation{
+            from{
+                transform: translateX(0);
+                opacity: 0.3;
+            }
+            to{
+                opacity: 1;
+                transform: translateX(7px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home__contain">
+        <div class="home__navbar">
+            <div class="logo_ct">
+                <span class="logo">E</span>FOOD
+            </div>
+            <div class="home__option">
+                <ul class="navbar__option">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__item-link navbar__item-link--actived">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="footer.html" class="navbar__item-link">Menu</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">Service</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="contact.html" class="navbar__item-link">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link btn-lg">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="footer.html" class="home__body-link">
+            <div class="home__body">
+                <div class="img__pr">
+                    <img class="img__part" src="./img-pr/banner_2.png" alt="Banner">
+                </div>
+                <div class="contain__icon">
+                    <i class="contain__icon-link fa-solid fa-play"></i>
+                </div>
+            </div>
+        </a>
+
+        <div class="home__footer">
+
+        </div>
+    </div>
+</body>
+</html>
