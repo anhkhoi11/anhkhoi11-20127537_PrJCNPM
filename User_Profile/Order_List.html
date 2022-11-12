@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangePassword</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="pr3.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+                <div class="navbar__logo"></div>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="./index.html" class="navbar__item-link">
+                            <i class="navbar__item-icon fa-regular fa-user"></i>
+                            Tài khoản
+                        </a>
+                        
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./change_password.html" class="navbar__item-link">
+                            <i class="navbar__item-icon fa-solid fa-lock"></i>
+                            Đổi mật khẩu
+                        </a>
+                    </li>
+                    <li class="navbar__item navbar__item--actived">
+                        <a href="#" class="navbar__item-link">
+                            <i class="navbar__item-icon fa-regular fa-rectangle-list"></i>
+                            Lịch sử đơn hàng
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="navbar__logout">
+                    <a href="#" class="navbar__logout-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        LOG OUT
+                    </a>
+                </div>
+        </div>
+
+        <div class="contain__main">
+            <h2 class="content__title">LỊCH SỬ ĐƠN HÀNG</h2>
+            <div class="content">   
+                <table class="content__table">
+                    <tr class="content__table-title">
+                        <th colspan="5">Orders List</th>
+                    </tr>
+                    <tr class="content__table-list-heading">
+                        <th class="STT">STT</th>
+                        <th class="method">Phương thức thanh toán</th>
+                        <th class="nameproduct">Tên sản phẩm</th>
+                        <th class="amount">Số lượng</th>
+                        <th class="total">Tổng Tiền</th>
+                    </tr>
+                    <tr class="Item">
+                        <td class="STTitem">1</td>  
+                        <td class="methodItem">Thanh toán khi nhận hàng</td>
+                        <td class="nameItem">
+                            <span>Chó xào</span>
+                            <span>Chó xào</span>
+                            <span>Chó xào</span>
+                            <span>Chó xào</span>
+                        </td>
+                        <td class="amountItem">1</td>
+                        <td class="totalItem">100.000đ</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                
+                    </div>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

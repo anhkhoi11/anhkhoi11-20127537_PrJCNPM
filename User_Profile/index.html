@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__item-link">
+                        <a href="./Order_List.html" class="navbar__item-link">
                             <i class="navbar__item-icon fa-regular fa-rectangle-list"></i>
                             Lịch sử đơn hàng
                         </a>
@@ -92,7 +92,7 @@
                             </div>
                             <input class="content__form-input" placeholder="Nhập địa chỉ">
                         </div>
-                        <button onclick="send__data()" type="submit" class="save__btn">LƯU</button>
+                        <button onclick="send__data(event)" type="submit" class="save__btn">LƯU</button>
                     </form>
                 </div>
                 
@@ -115,16 +115,6 @@
         // Thanh Navbar
         const $ = document.querySelector.bind(document);
         const $$ = document.querySelectorAll.bind(document);
-        const navbar_items = $$(".navbar__item");
-
-        navbar_items.forEach((element, index) => {
-            
-            element.onclick = function(){
-                $(".navbar__item.navbar__item--actived").classList.remove("navbar__item--actived");
-                
-                this.classList.add("navbar__item--actived");
-            }
-        });
         
         // Chuyển ảnh avatar
         const uploadBtn = $("#upload-button");
@@ -170,7 +160,8 @@
             }
         }
 
-        function send__data(){
+        function send__data(e){
+            e.preventDefault();
             var arrayInput = $$('input');
             var name = arrayInput[0].value;
             var phone = arrayInput[2].value;
